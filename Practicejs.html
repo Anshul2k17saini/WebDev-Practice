@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>
+		practise js
+	</title>
+	<script type="text/javascript">
+		let arr=[1,2,3,4,5,6]
+		const doublearray=(num)=>num=num*2
+		ar=arr.map(doublearray)
+		console.log(ar)
+		var john={
+			name:"john",
+			age:21,
+			isActive:true
+		}
+		var sam={
+			name:"sam",
+			age:29,
+			isActive:false
+		}
+		var Anshul={
+			name:"Anshul",
+			age:21,
+			isActive:true
+		}
+		let user=new Map()
+		user.set('john',john)
+		user.set('sam',sam)
+		user.set('Anshul',Anshul)
+		console.log(user)
+		console.log(user.size)
+		console.log(user.get('sam'))//to get specific values
+		let obj={
+			name:"Anshul",
+			count:0,
+			fun:function(num){
+			    this.count=this.count+num
+				console.log(this.count)
+			}
+
+		}
+		obj.fun(10);
+		//NOTE
+		//we cannot use arrow function with this as it make it undefine
+		//arrow function dont make them run on their self
+
+
+
+		
+	</script>
+</head>
+
+</html>

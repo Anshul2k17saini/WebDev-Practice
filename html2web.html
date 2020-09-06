@@ -1,0 +1,172 @@
+<!DOCTYPE html2<!DOCTYPE html>
+<html>
+<main>
+	<head>
+    
+<h1>Anshul Assosiation</h1>
+<hr>   <!-- hr is self closing tag give a line-->
+<h2> <u>Web Page Startup</u></h2><!-- one way of styling the h2 sub heading = <h2  style="color: blue ;"> Web Page Startup</h2 here u tag for underlining the line>
+</head> -->
+<!-- onother way of styling seprately  .  we can also add class to the element in the sub heading and direct change colour link=https://learn.freecodecamp.org/responsive-web-design/basic-css/use-a-css-class-to-style-an-element  -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><!-- for using google fontes we link it to a link for all fount-->
+<style>
+  h1{
+    text-align: center;
+    background-color: #09A7A1;
+    width: 200px;
+    font-size: 40px;
+  	color: orange;}
+  h2 {
+    position: fixed; /*in this the word get fixed and rootet in whole page*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  	color: yellow; 
+    font-size: 16px;
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    font-family: Lobster,monospace;
+    /*transform: skewX(-32deg); helpin paraboilic shape block of x axsis for y axsises use skewy()*/
+     }
+  p{
+  	color: #FF0000; /* red colour*/
+    font-size: 16px;
+    font-family:monospace ;
+
+   }
+   
+   body {   
+   margin: 0;
+  padding: 0;
+  background:black/*url("qer.jpg")*/;
+  background-size:cover;
+  background-position: center;
+  font-family: sans-serif;
+                   /*for background colour*/
+
+}
+   .class1{
+   	width: 500px;
+   }
+   .class2{
+   	border-color: blue;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+   }
+   .class3{
+   	background-color: silver;
+   	 
+   }
+   .photo{
+   	border-color: green;
+    border-width: 10px;
+    border-style: dashed;
+    border-radius: 50%;
+
+   }
+   .ab{
+   	border-color: red;
+    border-width: 10px;
+    border-style: dotted;
+    border-radius: 50%;
+   }
+   button {
+    background-color:  #FF790E;
+    animation-duration: 4s;
+  }
+    #fortuner{
+  background-color: green;
+}
+.box{
+	background-color: crimson;
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 1,6em;
+}
+
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-duration: 1.1s;
+  }
+  @keyframes background-color {
+    50% {
+      background-color: green;
+       top: 50px;
+       left: 25px;
+       opacity: 0.1;
+
+    }
+  }
+
+
+</style>
+</head>
+<body>
+<p>Click here for information <a href="https://en.wikipedia.org/wiki/Toyota_Fortuner" target="_blank">Fortuner</a>.</p>
+<p>want me start becoming doers rather than thinking about me as i am quit expensive</p>  <!-- only for paragraph writing-->
+ <img class ="class1 class2" src="fortuner1.jpg" alt="A cute orange cat lying on its back."
+  placeholder="this is placeholder text">
+  <img class="photo" src="tyui.jpg" alt="A cute orange cat lying on its back."/>
+  <img class="ab" src="abcd.jpg" alt="A cute orange cat lying on its back."/>
+  <div class="class3"> <!-- for division-->
+    <control><!-- for adding the audio bar in your web page-->
+  <audio id="meowClip" controls>
+  <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"  type="audio/mpeg">
+  </source>
+</audio>  
+  </control>
+    
+  	<h3 class="box">padding making box yo </h3>
+    <button>Sign Up</button>
+   
+  	<p>some adventage</p>
+ <ul>
+    <li>top feachers</li>
+    <li>high cost</li>
+    <li>fucking hot looks</li>
+  </ul>  
+  <p>some disadventage</p>
+  <ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+  <li>non sences</li>
+   </ol>
+ </div>
+   <p>your comment on fortuner</p>
+   <form action="/submit" id="fortuner">
+   <input type="text" required placeholder="fill here"> <!-- to add the blank for writing the text-->
+   <button type="submit">submits</button> <!-- to add a button in your web page -->
+
+    <label>  <!-- to add radio button whitch give a choice to chose -->
+       <input type="radio"
+    name="indoor-outdoor">mcq button1<!--if not getting go to his link--https://www.w3schools.com/htmL/tryit.asp?filename=tryhtml_form_radio -->
+
+  <input  type="radio" name="indoor-outdoor"
+  >mcq button2
+  </label>
+  <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label> <!-- to add a box cube option mcq choece checkbox-->
+
+
+   </form>
+
+ </body>  
+</main>
+</html>
+
+
+   <!--note1= css style will on give preference to the file bellow it-->
